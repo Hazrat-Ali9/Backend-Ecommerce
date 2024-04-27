@@ -176,6 +176,7 @@ async function run() {
     }
 });
 
+// api put function 
 app.put("/product/:id/reject", async (req, res) => {
   const productId = req.params.id;
   const result = await productCollection.updateOne(

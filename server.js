@@ -165,7 +165,7 @@ async function run() {
         res.status(500).json({ message: 'Error approving product.' });
       }
     });
-
+// api get function
   app.get('/product/pending', async (req, res) => {
     try {
         const pendingProducts = await productCollection.find({ status: 'pending' }).toArray();

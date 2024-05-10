@@ -61,7 +61,7 @@ async function run() {
       res.send(products);
   });
   
-    
+   // get 
   app.get("/product/:id", async (req, res) => {
       
     const id = req.params.id;

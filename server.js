@@ -89,7 +89,7 @@ async function run() {
           image: req.file.filename,
           status: status
         };
-      
+      // Result
         const result = await productCollection.insertOne(newProduct);
         res.send(result);
       } catch (error) {

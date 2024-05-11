@@ -97,7 +97,7 @@ async function run() {
         res.status(500).send('Server Error');
       }
     });
-
+// put
     app.put("/product/:id", upload.single('image'), async (req, res) => {
       try {
         const id = req.params.id;

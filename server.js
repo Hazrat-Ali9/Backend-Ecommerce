@@ -126,7 +126,7 @@ async function run() {
         if (result.modifiedCount === 0) {
           return res.status(500).send("Failed to update product");
         }
-    
+    // Send
         res.send("Product updated successfully");
       } catch (error) {
         console.error("Error updating product:", error);

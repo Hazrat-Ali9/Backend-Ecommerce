@@ -134,7 +134,7 @@ async function run() {
       }
     });
     
-    
+    // Get
     app.get("/discount", async (req, res) => {
       try {
         const discountPercentage = parseInt(req.query.discountPercentage);

@@ -227,7 +227,7 @@ app.post("/user", upload.array('images', 2), async (req, res) => {
 });
 
 
-
+// async function 
     app.get("/user", async (req, res) => {
       try {
           const users = await userCollection.find().toArray();

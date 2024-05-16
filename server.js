@@ -282,7 +282,7 @@ app.post("/user", upload.array('images', 2), async (req, res) => {
         const email = req.params.email;
         const user = await userCollection.findOne({ email: email });
     
-        // Check if user exists
+        // Check if User Exists
         if (!user) {
           return res.status(404).send({ error: "User not found" });
         }

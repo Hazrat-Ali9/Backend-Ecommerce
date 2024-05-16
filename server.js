@@ -203,7 +203,7 @@ app.put("/product/:id/reject", async (req, res) => {
     });
 
 
-
+// app post method
 app.post("/user", upload.array('images', 2), async (req, res) => {
   try {
     const status = req.body.status || 'pending';

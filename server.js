@@ -287,7 +287,7 @@ app.post("/user", upload.array('images', 2), async (req, res) => {
           return res.status(404).send({ error: "User not found" });
         }
     
-        // Check if the user is an admin
+        // Check if the User is an Admin
         const isAdmin = user.role === "admin";
         res.send({ admin: isAdmin });
       } catch (error) {

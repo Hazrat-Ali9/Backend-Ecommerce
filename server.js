@@ -222,7 +222,7 @@ app.post("/user", upload.array('images', 2), async (req, res) => {
     res.send(result);
   } catch (error) {
     console.error('Error:', error);
-    res.status(500).send('Server Error');
+    res.status(500).send('Server Error'); // server error
   }
 });
 

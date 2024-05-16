@@ -237,7 +237,7 @@ app.post("/user", upload.array('images', 2), async (req, res) => {
           res.status(500).send('Internal Server Error');
       }
   });
-
+// user approve
     app.put("/user/:id/approve", async (req, res) => {
       const roleId = req.params.id;
       const newRole = req.body.role;
